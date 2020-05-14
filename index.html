@@ -1,0 +1,319 @@
+<!doctype html>
+<html>
+
+    <head>
+    
+        <!-- Required meta tags -->
+    <meta charset="utf-8">
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asgardi</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!--owl-carousel-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!--font-awesome-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--Animation-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js">
+
+    <!--Roboto Font-->
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+<!-- Animator CSS -->
+    <link  rel="stylesheet"  href="./css/animate.css"    />
+    <link rel="stylesheet" href="./css/styles.css">
+
+    </head>
+
+    <body>
+        
+          <header class="header">
+    <nav class="navbar navbar-expand-lg fixed-top py-3">
+        <div class="container"><a href="#" class="navbar-brand text-uppercase font-weight-bold"><h2 class="logo"><span class="dark-blue">ASGA</span>RDI</h2></a>
+            <button type="button" data-toggle="collapse" data-target="#menu-content" aria-expanded="false"
+                    aria-controls="navbar" class="collapsed navbar-toggle hamburgurMenu" onclick="myFunction(this)">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="bar1"></span>
+                <span class="bar2"></span>
+                <span class="bar3"></span>
+            </button>
+
+            <div id="menu-content" class="collapse navbar-collapse">
+                <a href="toTop"></a>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active"><a href="#home" class="nav-link">Home <span
+                            class="sr-only">(current)</span></a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link ">About Us</a></li>
+                    <li class="nav-item"><a href="#services" class="nav-link">Our Services</a></li>
+                    <li class="nav-item"><a href="#blog" class="nav-link ">Portfolio</a></li>
+                    <li class="nav-item"><a href="#blog" class="nav-link ">Pricing</a></li>
+                    <li class="nav-item"><a href="#blog" class="nav-link ">Blog</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link ">Contact Us</a></li>
+                </ul>
+                      <button type="button" class="collapsed ml-auto canvas-menu">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="hamburger-1"></span>
+                <span class="hamburger-2"></span>
+                <span class="hamburger-3"></span>
+            </button>
+            </div>
+        </div>
+    </nav>
+</header>
+        
+        <header id="home">
+            
+            <div class="container">
+            
+                <div class="row ">
+                
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 col-12 hero-text align-self-center">
+                    
+                        <h6 class="tag">AWESOME DESIGN</h6>
+                        <h3 class="text-grey heading-font">Digital solutions that engage, inspire and make you think</h3>
+                        <p class="text-grey tiny-font">Our users are impatient. They're probably distracted too. Keep it simple and beautiful, fun and functional. Clean aesthetics supported by a strong concept is what we stand for.</p>
+                        <div class="hero-buttons">
+                        <button class="hero-btn btn mr-3">Get Started</button>
+                            <button class="hero-btn btn">View More</button>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 col-12 trial-form">
+                    
+                         <div class="trial w-75 py-4">
+                <form class="form-horizontal"  role="form" id="contactForm">
+                        <h4 class="text-center trial-tag-line mb-4">We are offering 14 days free trial</h4>
+                    <div class="form-group d-flex justify-content-center">
+                        <input type="text" class="form-control w-75 mb-2 trialForm" id="name" placeholder="Enter your name..." required data-error="Please check the field" />
+                        <div class="help-block with-errors"></div>
+                    </div>
+                    <div class="form-group d-flex justify-content-center">
+                        <input type="email" class="form-control w-75 mb-2 trialForm" id="email" placeholder="Enter your emailid..." required>
+                        <div class="help-block with-errors"></div>
+                    </div>
+                    <div class="form-group d-flex justify-content-center">
+                        <input type="text" class="form-control w-75 mb-2 trialForm" id="phone" placeholder="Enter your mobile no..." required>
+                        <div class="help-block with-errors"></div>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                    <button type="submit" id="form-submit" aria-label='Thanks' class='h-button btn mt-3 trial-btn centered w-75 bg-dark-blue text-white' data-text='Send' >
+                        FREE TRIAL
+                    </button>
+                    </div>
+                </form>
+                <div id="msgSubmit" class="h3 text-center hidden"></div>
+                <div class="clearfix"></div>
+                
+            </div>
+                    
+                    </div>
+                
+                </div>
+            
+            </div>
+        </header>
+        
+      
+        <section class="features pb-5">
+            <div class="container hero-footer bg-dark-blue text-white px-3 px-md-5 px-lg-5 px-sm-3 py-5">
+            
+                <div class="row">
+                
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                    
+                        <h6 class="hero-footer-tagline text-white">Welcome</h6>
+                        
+                        <h3 class="hero-footer-heading text-white">We Are Doing The Great Creative Things.</h3>
+                        
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 align-self-center">
+                        
+                        <p class="mini-font">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit Nulla accumsan, metus ultrices eleifend gravi, Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </p>
+                    
+                    </div>
+                    
+                </div>
+            
+            </div>
+    
+            <div class="container features-section">
+            <h2 class="text-center heading-font">Asgardi Features</h2>
+                <p class=" w-50  mx-auto text-center mini-font">Lorem ipsum dolor sit amet, consectetur adipiscing elit Nulla accumsan, metus ultrices eleifend gravi.</p>
+            
+                <div class="feature-cards mt-4 mt-md-5 mt-lg-5">
+                
+                    <div class="row text-left justify-content-center">
+                    
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 mx-3 col-30 px-3 px-sm-4 px-md-4 px-lg-4 py-5 mt-3 feature-card">
+                        
+                            <h4>Designing</h4>
+                            <p class="tiny-font">Ornare vitae pulvinar hendrerit are we a leo a vestibulum some are know is go ullamcor nullam.</p>
+                            
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 mx-3 col-30 px-3 px-sm-4 px-md-4 px-lg-4 py-5 mt-3 feature-card">
+                        
+                            <h4>Branding</h4>
+                            <p class="tiny-font">Ornare vitae pulvinar hendrerit are we a leo a vestibulum some are know is go ullamcor nullam.</p>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 mx-3  col-30 px-3 px-sm-4 px-md-4 px-lg-4 py-5 mt-3 feature-card">
+                        
+                            <h4>Development</h4>
+                            <p class="tiny-font">Ornare vitae pulvinar hendrerit are we a leo a vestibulum some are know is go ullamcor nullam.</p>
+                            
+                        </div>
+                        
+                    </div>
+                    
+                    
+                 <div class=" container more-features text-right mt-5">
+                    
+                        <a class="more-features-link" href="#">More Features</a>
+                        
+                    </div>
+                    
+                
+                </div>
+                
+            
+            </div>
+            
+        </section>
+        
+        
+        <section class="ideas">
+            <div class="row">
+            
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 image-section">
+                
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 ideas-content p-5 mt-md-5 mt-xl-5">
+                <h6 class="dark-blue ideas-tagline">WE SHAPE YOUR IDEAS</h6>
+                    
+                <h2 class="heading-font text-white mt-3">Brands, Products & Truly Interactive Experiences.</h2>
+                    
+                    <p class="mini-font text-white">Our studio is not just about graphic design; it’s more than that. Offer communication services, and we’re responsible for our process and results. We thank each of clients and projects; thanks to them we have grown and built what we are.</p>
+                    
+                    <div class="row text-white text-center">
+                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 time mt-5">
+                        <p class="font-weight-bold number "> 450</p>
+                        <p class="mt-4">Happy Clients</p>
+                        </div>
+                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 mt-5 time">
+                        <p class="font-weight-bold number">984</p>
+                        <p class="mt-4">Working Hours</p>
+                        </div>
+                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 mt-5 time">
+                        <p class="font-weight-bold number">895</p>
+                        <p class="mt-4">Campaign Posted</p>
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+        
+            <div class=" container work pb-5">
+            
+                <div class="row">
+                
+                    <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12 col-12 p-5 mt-md-5 mt-xl-5">
+                    
+                    <h2 class="text-white featured-work">Featured Work</h2>
+                        
+                    </div>
+                    <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12 col-12 p-5 mt-md-5 mt-xl-5">
+                    <p class="text-white featured-work-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit Nulla accumsan, metus ultrices eleifend gravi.</p>
+                    </div>
+                    
+                </div>
+            
+            </div>
+            
+           
+        </section>
+        
+         <div class=" container gallery-images">
+                <div class="row justify-content-center">
+        <div class="responsive m-5">
+  <div class="gallery">
+      <img src="images/woman-programming-on-a-notebook-1181359.jpg" alt="Forest" width="200" height="800">
+  </div>
+            <div class="overlay"></div>
+</div>
+
+<div class="responsive m-5">
+  <div class="gallery">
+      <img src="images/brown-coffee-table-surrounded-by-four-chairs-635041.jpg" alt="Northern Lights" width="400" height="800">
+  </div>
+    <div class="overlay"></div>
+</div>
+                    
+                    <div class="responsive m-5">
+  <div class="gallery">
+      <img src="images/man-in-wearing-black-vr-headset-3761118.jpg" alt="Forest" width="200" height="800">
+  </div>
+            <div class="overlay"></div>
+</div>
+
+<div class="responsive m-5">
+  <div class="gallery">
+      <img src="images/woman-programming-on-a-notebook-1181359.jpg" alt="Northern Lights" width="200" height="800">
+  </div>
+    <div class="overlay"></div>
+</div>
+           
+                </div>
+             
+             <div class="more-works-button text-right">
+             <button class="btn text-white bg-dark-blue more-btn">More Work's</button>
+             </div>
+             
+            </div>
+        
+        <section class="testimonial">
+        
+            
+            
+        </section>
+        
+        
+    </body>
+    
+    
+     <!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"  crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"  integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script type="text/javascript" src="./js/validator.min.js"></script>
+<script type="text/javascript" src="./js/form-scripts.js"></script>
+<script src="./js/script.js"></script>
+
+<script>
+    AOS.init();
+
+</script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <script type="text/javascript">
+        $('body').append('<div style="" id="loadingDiv"><div class="loader">Loading...</div></div>');
+        $(window).on('load', function(){
+            setTimeout(removeLoader, 2000); //wait for page load PLUS two seconds.
+        });
+        function removeLoader(){
+            $( "#loadingDiv" ).fadeOut(500, function() {
+                // fadeOut complete. Remove the loading div
+                $( "#loadingDiv" ).remove(); //makes page more lightweight
+            });
+        }
+    </script>
+
+</html>
