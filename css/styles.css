@@ -283,11 +283,15 @@ background: linear-gradient(45deg, #2231F6 0%, #3264F5 39%, #EFEFEF 100%);
 }
 
 #home{
-    background-image: url(../images/black-ball-point-pen-with-brown-spiral-notebook-733852.jpg);
+    
+    background-image: url(../images/hero-image.jpeg);
     background-size: cover;
+    background-position: center;
+    width: 100%;
     height: 100vh;
     display: flex;
-    align-items: center;
+    align-items: center
+    
 }
 
 .tag{
@@ -490,8 +494,8 @@ div.gallery img {
     bottom: -35px
 }
 .carousel-indicators li {
-    width: 25px;
-    height: 25px;
+    width: 15px;
+    height: 15px;
     border-radius: 100%;
     background-color:#ffffff;
     border: 1px solid #707070;
@@ -878,8 +882,8 @@ color: #2231F6;
 }
 
 .owl-dot{
-     width: 25px;
-    height: 25px;
+     width: 15px;
+    height: 15px;
     border-radius: 100%;
     background-color:#C7C5C5;
     border: 1px solid #707070;
@@ -908,11 +912,12 @@ Contact Section
      letter-spacing: 0.9px;
     font-weight: 700;
 }
-.g-map{
-    background-image: url(/images/grey2.png);
+g-map{
+    background-image: url(../images/grey2.png);
     background-repeat:no-repeat;
     background-size: cover;
     background-color: #DCDCDC;
+    background-position: 00%;
 }
 #contactForm input {
     height: 50px;
