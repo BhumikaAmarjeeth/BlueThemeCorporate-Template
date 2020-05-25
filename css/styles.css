@@ -419,6 +419,14 @@ border-radius: 10px;
     line-height: 26px;
 }
 
+/*Services -cards*/
+
+
+.flat-icon{
+    color: #87878B;
+    width: 40px;
+}
+
 /*Gallery*/
 
 
@@ -428,6 +436,10 @@ border-radius: 10px;
     top: -200px;
     opacity: 1;
 }
+.gallery:hover {
+    border: 1px solid #ccc;
+    opacity:0.3;
+  }
 
 div.gallery img {
     width: 100%;
@@ -439,6 +451,7 @@ div.gallery img {
   }
 
   .responsive {
+      position: relative;
     margin: 0 6px;
     float: left;
     width: 40.99999%;
@@ -463,6 +476,48 @@ div.gallery img {
    .responsive {
     width: 36.99999%;
 }
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    background-color: #5360d6;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+}
+
+.portfolio:hover  .overlay{
+    background: transparent linear-gradient(60deg,  #3264f5 0%, #337ab7 100%) 0% 0% no-repeat padding-box;
+    opacity: 0.89;
+    
+    bottom: 0;
+}
+.fadeIn-top{
+    top: 20%;
+}
+.gallery {
+    position: relative;
+    display: inline-block;
+    background: #fff;
+    width: 100%;
+    -webkit-transition: 1s ease all;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+
+}
+
+.overlay i{
+    padding-top: 10px;
+    font-size: 20px;
+    color: #fff;
 }
 
   
