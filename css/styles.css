@@ -47,7 +47,7 @@ a:hover, a:focus {
 }
 
 .dark-text {
-    color: #414141;
+    color: #414141 !important;
 }
 
 .blue-theme {
@@ -74,9 +74,8 @@ a:hover, a:focus {
 
 .mini-font {
     font-size: 16px;
-
     letter-spacing: 0.2px;
-    color: #828282 !important;
+    color: #828282;
 }
 
 .heading-font {
@@ -84,7 +83,16 @@ a:hover, a:focus {
     font-weight: bold;
     letter-spacing: 1.6px;
 }
+.heading-font-testimonial{
+    font-size: 23px;
+    font-weight: bold;
+    letter-spacing: 6px;
+}
 
+.font-14{
+    font-size: 13px;
+    letter-spacing: 1.25px;
+}
 
 @media (min-width: 1200px) {
     .col-30 {
@@ -306,9 +314,9 @@ textarea, select, input, button:focus {
 .navbar .nav-link:focus {
     color: #fff;
     background: #2231F6;
-    background: -moz-linear-gradient(45deg, #2231F6 0%, #3264F5 39%, #EFEFEF 100%);
-    background: -webkit-linear-gradient(45deg, #2231F6 0%, #3264F5 39%, #EFEFEF 100%);
-    background: linear-gradient(45deg, #2231F6 0%, #3264F5 39%, #EFEFEF 100%);
+    background: -moz-linear-gradient(45deg, #2231F6 0%, #3264F5 100%);
+    background: -webkit-linear-gradient(45deg, #2231F6 0%, #3264F5  100%);
+    background: linear-gradient(45deg, #2231F6 0%, #3264F5  100%);
     border-radius: 13px;
     opacity: 1;
 }
@@ -567,9 +575,12 @@ textarea, select, input, button:focus {
     font-size: 16px;
     line-height: 22px;
     letter-spacing: 1.2px;
-    color: #f6f6f6 !important;
+    color: #414141 !important;
 }
 
+.hero-footer .mini-font{
+    color:  #EFEFEF !important;
+}
 .feature-card {
     background-color: #fff;
     padding: 60px 30px;
@@ -817,16 +828,16 @@ div.gallery img {
     background-color: #2231F6;
 }
 
-.carousel-inner::after {
+.carousel-inner::before {
     content: "\f10d";
-    position: relative;
+    position: absolute;
     font-family: 'FontAwesome';
     font-size: 200px;
-    top: 120px;
     text-align: center;
     color: #e6e6e6;
-    left: -42%;
     z-index: 0;
+    margin-top: 100px;
+    margin-left: 40%;
 }
 
 .carousel-item {
@@ -1293,12 +1304,12 @@ Contact Section
 
 
 .section2 {
-    position: relative;
+
     overflow: hidden;
 }
 .section2 .contactform {
     position: absolute;
-    top: 0;
+    top: 10%;
     width:500px;
     right: 10%;
     z-index: 99;
@@ -1421,7 +1432,7 @@ Service Box
 }
 
 .v2:hover, .v2:focus {
-    background-color: #0063dd !important;
+    background-color:  #2231F6 !important;
     border: 1px solid #fff;
     color: #fff;
 }
@@ -1792,4 +1803,51 @@ div.profile:hover img {
 
 .clients img{
     max-width: 100px;
+}
+
+
+.footer .social-link a{
+    font-size: 15px;
+    color: #fff;
+    margin: 0px 5px;
+    line-height: 30px;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: #2231F6;
+    -webkit-transition: all .6s ease;
+    -moz-transition: all .6s ease;
+    -ms-transition: all .6s ease;
+    -o-transition: all .6s ease;
+    transition: all .6s ease;
+}
+.footer .social-link li:hover a{
+    border-radius: 50%;
+    background: #2231F6;
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+
+@media only screen and (max-width: 768px) {
+.clients div img{
+    margin-bottom: 50px;
+}
+    .clients{
+        margin-top: 200px;
+    }
+    .section1{
+        margin-bottom: 100px;
+    }
+    #counter{
+        text-align: center;
+    }
+    .feature-card{
+        margin-bottom: 15px;
+    }
+    .features .mini-font {
+        color:#222;
+    }
 }
