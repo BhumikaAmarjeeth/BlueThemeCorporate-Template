@@ -9,19 +9,14 @@ $(function () {
         }
     });
 });
+
+
 // Hamburgur menu
 function myFunction(x) {
   x.classList.toggle("change");
 }
 
-$(document).ready(function(){
-    if($(window).width() > 992){
-     $(".navbar-nav").hide();
-  $(".canvas-menu").click(function(){
-    $(".navbar-nav").toggle();
-  });
-    }
-});
+
 
 //clients
 $('.blog1').owlCarousel({
@@ -74,7 +69,6 @@ $(document).ready(function(){
 });
 
 //counter
-
 (function ($) {
 	$.fn.countTo = function (options) {
 		options = options || {};
@@ -183,9 +177,7 @@ $(window).scroll(function() {
 });
 
 //model video play
-// $('#myModal').on('hidden.bs.modal', function () {
-//   callPlayer('yt-player', 'stopVideo');
-// });
+
 $('#myModalPrev').on('show.bs.modal', function (e) {
 	var idVideo = $(e.relatedTarget).data('id');
 	$('#myModalPrev .modal-body').html('<iframe width="100%" height="400px" src="https://www.youtube.com/embed/' + idVideo + '?autoplay=true" frameborder="0" allowfullscreen></iframe>');
@@ -201,25 +193,17 @@ $(document).on("click", '[data-toggle="lightbox"]', function(event) {
 	$(this).ekkoLightbox();
 });
 
-
-// Bind to scroll
-$(window).scroll(function(){
-	// Get container scroll position
-	var fromTop = $(this).scrollTop()+topMenuHeight;
-	// Get id of current scroll item
-	var cur = scrollItems.map(function(){
-		if ($(this).offset().top < fromTop)
-			return this;
-	});
-	// Get the id of the current element
-	cur = cur[cur.length-1];
-	var id = cur && cur.length ? cur[0].id : "";
-
-	if (lastId !== id) {
-		lastId = id;
-		// Set/remove active class
-		menuItems
-			.parent().removeClass("active1")
-			.end().filter("[href='#"+id+"']").parent().addClass("active1");
+//gototop
+var btn = $('#button');
+$(window).scroll(function() {
+	if ($(window).scrollTop() > 300) {
+		btn.addClass('show');
+	} else {
+		btn.removeClass('show');
 	}
+});
+
+btn.on('click', function(e) {
+	e.preventDefault();
+	$('html, body').animate({scrollTop:0}, '300');
 });

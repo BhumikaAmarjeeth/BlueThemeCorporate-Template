@@ -7,15 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Asgardi Template | Demo 4</title>
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- Fancy  Box-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css"
-          media="screen">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css"  media="screen">
     <!--owl-carousel-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Fancy  Box-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" media="screen">
@@ -24,37 +21,160 @@
     <!-- Animator CSS -->
     <link rel="stylesheet" href="./css/animate.css"/>
     <link rel="stylesheet" href="./css/styles.css">
+<style>
+    .mySidenav1{
+        position: absolute;
+        background-color: #fff;
+        z-index: 9999;
+        transition: .5s;
+        height: 100%;
+        top: 0;
+        right: 0;
+        width: 550px !important;
+    }
+    .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 9999;
+        top: 0;
+        right: 0;
+        background-color: rgba(0,0,0,.8);
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+    }
 
-    <style>
 
-    </style>
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+
+
+    @media screen and (max-height: 450px) {
+        .sidenav {padding-top: 15px;}
+
+    }
+.side-info{
+    border-top:1px solid #C7C5C5;
+}
+.contact-list p{
+    font-size: 13px;
+    line-height: 15px;
+}
+    .instagram {
+        overflow: hidden;
+        margin: 0 -4px;
+    }
+    .instagram > a {
+        float: left;
+        width: 20.33%;
+        padding: 0 4px;
+        margin-bottom: 7px;
+    }
+    .instagram img {
+        width: 100%;
+    }
+</style>
 </head>
 <body>
+<a id="button"></a>
+
+<div id="mySidenav" class="sidenav">
+    <div class="mySidenav1" id="mySidenav1">
+
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="container mlf--30">
+        <div class="logo-top mt-30 mb-30">
+       <a href="#" class="text-uppercase  font-weight-bold"><h2 class="logo text-center" >
+            <span class="dark-blue">ASGA</span>RDI</h2></a>
+        </div>
+        <div class="side-info mb-30 ">
+                <div class="contact-list mb-30 pt-20">
+                    <h4>Office Address</h4>
+                    <p>123/A, Miranda City Likaoli
+                        Prikano, Dope</p>
+                </div>
+                <div class="contact-list mb-30">
+                    <h4>Phone Number</h4>
+                    <p>+0989 7876 9865 9</p>
+                    <p>+(090) 8765 86543 85</p>
+                </div>
+                <div class="contact-list mb-30">
+                    <h4>Email Address</h4>
+                    <p>info@example.com</p>
+                    <p>example.mail@hum.com</p>
+                </div>
+            </div>
+
+        <div class="footer1 mb-40">
+        <div class="social-link">
+            <ul class="d-flex list-inline">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+            </ul>
+        </div>
+        </div>
+            <div class="instagram">
+                <a href="#">
+                    <img src="./images/instagram/p1.jpg" alt="">
+                </a>
+                <a href="#">
+                    <img src="./images/instagram/p2.jpg" alt="">
+                </a>
+                <a href="#">
+                    <img src="./images/instagram/p3.jpg" alt="">
+                </a>
+                <a href="#">
+                    <img src="./images/instagram/p4.jpg" alt="">
+                </a>
+                <a href="#">
+                    <img src="./images/instagram/p5.jpg" alt="">
+                </a>
+                <a href="#">
+                    <img src="./images/instagram/p6.jpg" alt="">
+                </a>
+                <a href="#">
+                    <img src="./images/instagram/p2.jpg" alt="">
+                </a>
+                <a href="#">
+                    <img src="./images/instagram/p1.jpg" alt="">
+                </a>
+            </div>
+</div></div>
+</div>
+
 <header class="header">
+    <a href="toTop"></a>
     <nav class="navbar navbar-expand-lg fixed-top py-3">
         <div class="container"><a href="#" class="navbar-brand text-uppercase font-weight-bold"><h2 class="logo">
             <span class="dark-blue">ASGA</span>RDI</h2></a>
             <button type="button" data-toggle="collapse" data-target="#menu-content" aria-expanded="false"
-                    aria-controls="navbar" class="collapsed navbar-toggle hamburgurMenu" onclick="myFunction(this)">
+                    aria-controls="navbar" class="collapsed navbar-toggle hamburgurMenu"  onclick="myFunction(this)">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="bar1"></span>
                 <span class="bar2"></span>
                 <span class="bar3"></span>
             </button>
-
             <div id="menu-content" class="collapse navbar-collapse">
                 <a href="toTop"></a>
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active"><a href="#home" class="nav-link">Home <span
-                            class="sr-only">(current)</span></a></li>
+                    <li class="nav-item active"><a href="#home" class="nav-link">Home <span class="sr-only">(current)</span></a></li>
                     <li class="nav-item"><a href="#about" class="nav-link ">About Us</a></li>
-                    <li class="nav-item"><a href="#services" class="nav-link">Our Services</a></li>
+                    <li class="nav-item"><a href="#service" class="nav-link">Our Services</a></li>
                     <li class="nav-item"><a href="#portfolio" class="nav-link ">Portfolio</a></li>
                     <li class="nav-item"><a href="#pricing" class="nav-link ">Pricing</a></li>
                     <li class="nav-item"><a href="#blog" class="nav-link ">Blog</a></li>
                     <li class="nav-item"><a href="#contact" class="nav-link ">Contact Us</a></li>
                 </ul>
-                <button type="button" class="collapsed ml-auto canvas-menu">
+                <button type="button" class="collapsed ml-auto canvas-menu" onclick="openNav()">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="hamburger-1"></span>
                     <span class="hamburger-2"></span>
@@ -64,7 +184,6 @@
         </div>
     </nav>
 </header>
-
 <header id="home">
 
     <div class="container">
@@ -79,7 +198,7 @@
                 <p class="text-grey tiny-font">Our users are impatient. They're probably distracted too. Keep it
                     simple and beautiful, fun and functional. Clean aesthetics supported by a strong concept is what
                     we stand for.</p>
-                <div class="hero-buttons mt-30">
+                <div class="hero-buttons mt-30 mb-20">
                     <button class="hero-btn btn mr-3">Get Started&nbsp; <i class="fa fa-long-arrow-right"></i>
                     </button>
                     <button class="hero-btn btn">View More&nbsp; <i class="fa fa-long-arrow-right"></i></button>
@@ -88,7 +207,7 @@
             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 col-12 trial-form"  data-aos="fade-left">
 
                 <div class="trial w-75 py-4">
-                    <form class="form-horizontal mb-50" role="form" id="contactForm1">
+                    <form class="form-horizontal mb-30" role="form" id="contactForm1">
                         <h4 class="text-center trial-tag-line mb-4 mt-30 pb-20">We are offering 14 days free
                             trial</h4>
                         <div class="form-group d-flex justify-content-center">
@@ -125,9 +244,7 @@
 
     </div>
 </header>
-
-
-<section class="features pb-5">
+<section id="service"  class="features pb-5">
     <div class="container hero-footer bg-dark-blue text-white px-3 px-md-5 px-lg-5 px-sm-3 py-5">
 
         <div class="row">
@@ -237,8 +354,6 @@
     </div>
 
 </section>
-
-
 <section id="about" class="ideas">
     <div class="row">
 
@@ -273,7 +388,7 @@
 
     </div>
 
-    <div class=" container work pb-5">
+    <div class=" container work pb-5" id="portfolio">
 
         <div class="row">
 
@@ -293,8 +408,7 @@
 
 
 </section>
-
-<div class=" container gallery-images" data-aos="fade-up" id="portfolio">
+<div class=" container gallery-images" data-aos="fade-up" >
     <div class="row justify-content-center">
         <div data-aos="zoom-in" class="responsive portfolio m-5">
             <div class="gallery">
@@ -361,7 +475,6 @@
                 class="fa fa-long-arrow-right"></i></span></button>
     </div>
 </div>
-
 <section class="testimonial pt-50 pb-100">
     <h2 class="text-center heading-font-testimonial dark-blue pb-10 pt-50">What Client Say!</h2>
     <p class=" w-75  mx-auto text-center dark-text font-13 mb-50">Lorem ipsum dolor sit amet, consectetur adipiscing
@@ -430,7 +543,7 @@
                             <circle class='circle' id="XMLID_17_" fill="none" stroke-width="7"
                                     stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="106.8"
                                     cy="106.8" r="103.3"/></svg>
-                        <img src="./images/man-in-wearing-black-vr-headset-3761118.jpg" class="w-100 h-auto"
+                        <img src="./images/video.jpg" class="w-100 h-auto"
                              alt="My Awesome Video"/>
                     </a>
                 </div>
@@ -440,7 +553,6 @@
     </div>
 
 </section>
-
 <section class="team pt-50 pb-100  more-features">
 
     <div class="container pt-5">
@@ -627,7 +739,6 @@
         </div>
     </div>
 </section>
-
 <!--Blog-->
 <section class=" blog  pb-50 pb-100 mt-4  pt-50" data-aos="fade-up" id="blog">
     <h2 class="text-center heading-font  mt-4 pt-20">Latest News</h2>
@@ -713,13 +824,12 @@
 </section>
 <!--Contact-->
 <section class="section1"  data-aos="fade-left"   id="contact">
-
-<section class="section2 mb-100">
+<div class="section2 mb-100">
     <div class="contactform">
         <h6 class="contact-tagline pb-10">WHO WE ARE</h6>
         <h2 class="contact-heading heading-font pb-10">Drop Us A Line</h2>
         <p class="tiny-font text-grey pb-10 ">We are the creative agency, we make creative projects. We work to make your business start effectively working for you.</p>
-        <form class="form-horizontal text-center" role="form" id="contactForm2">
+        <form class="form-horizontal text-center" role="form" id="contactForm">
             <div class="form-group">
                 <input type="text" class="form-control" id="name" placeholder="Enter Your Name" required
                        data-error="Please check the field"/>
@@ -753,7 +863,7 @@
         </form>
     </div>
     <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div class="contmap" style='overflow:hidden;height:850px;width:100%;'><div id='gmap_canvas' style='height:100%;width:100%;'></div><div><small><a href="http://embedgooglemaps.com">									embed google maps							</a></small></div><div><small><a href="http://freedirectorysubmissionsites.com/">free web directories</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:14,center:new google.maps.LatLng(19.075314480255834,72.88153973865361),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(19.075314480255834,72.88153973865361)});infowindow = new google.maps.InfoWindow({content:'<strong>My Location</strong><br>mumbai<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
-</section>
+</div>
 
 </section>
 <!--Clients-->
@@ -776,7 +886,6 @@
     </div>
 
 </section>
-
 <section class="get-start-section  pt-5 pb-5" data-aos="zoom-in">
     <div class="container">
         <div class="col-lg-12 row bg-dark-blue service-box box-v2">
@@ -811,7 +920,6 @@
 
     </div>
 </footer>
-
 <div class="modal fade" id="myModalPrev" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
@@ -827,8 +935,6 @@
     </div>
 </div>
 </body>
-
-
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"  crossorigin="anonymous"></script>
@@ -849,19 +955,30 @@
 <script>
     AOS.init();
 </script>
-<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>-->
-<!--<script type="text/javascript">-->
-<!--    $('body').append('<div style="" id="loadingDiv"><div class="loader">Loading...</div></div>');-->
-<!--    $(window).on('load', function () {-->
-<!--        setTimeout(removeLoader, 2000); //wait for page load PLUS two seconds.-->
-<!--    });-->
+<script type="text/javascript">
+    $('body').append('<div style="" id="loadingDiv">' + '<svg viewBox="0 0 100 100" class="svg" xmlns="http://www.w3.org/2000/svg">\n' +
+        '  <circle class="circle1" cx="50" cy="50" r="45"/>\n' +
+        '</svg></div>');
+    $(window).on('load', function () {
+        setTimeout(removeLoader, 2000); //wait for page load PLUS two seconds.
+    });
 
-<!--    function removeLoader() {-->
-<!--        $("#loadingDiv").fadeOut(500, function () {-->
-<!--            // fadeOut complete. Remove the loading div-->
-<!--            $("#loadingDiv").remove(); //makes page more lightweight-->
-<!--        });-->
-<!--    }-->
-<!--</script>-->
+    function removeLoader() {
+        $("#loadingDiv").fadeOut(500, function () {
+            // fadeOut complete. Remove the loading div
+            $("#loadingDiv1").remove(); //makes page more lightweight
+        });
+    }
+</script>
+<script>
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "100%";
 
+    }
+
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+
+    }
+</script>
 </html>

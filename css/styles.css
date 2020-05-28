@@ -20,6 +20,7 @@ body {
     color: #333333;
     font-weight: 400;
     overflow-x: hidden;
+    transition: background-color .5s;
 }
 
 a:hover, a:focus {
@@ -220,6 +221,9 @@ textarea, select, input, button:focus {
 .mb-15 {
     margin-bottom: 15px;
 }
+.mb-30 {
+    margin-bottom: 30px;
+}
 .mb-40 {
     margin-bottom: 40px;
 }
@@ -238,7 +242,9 @@ textarea, select, input, button:focus {
 .mb-100 {
     margin-bottom: 100px;
 }
-
+.mlf--30{
+    margin: 0px 30px;
+}
 .font-dark {
     color: #222 !important;
 }
@@ -315,9 +321,9 @@ textarea, select, input, button:focus {
     color: #fff;
     background: #2231F6;
     background: -moz-linear-gradient(45deg, #2231F6 0%, #3264F5 100%);
-    background: -webkit-linear-gradient(45deg, #2231F6 0%, #3264F5  100%);
-    background: linear-gradient(45deg, #2231F6 0%, #3264F5  100%);
-    border-radius: 13px;
+    background: -webkit-linear-gradient(45deg, #2231F6 0%, #0839ca 100%);
+    background: linear-gradient(45deg, #2231F6 0%, #0839ca 100%);
+    border-radius: 1px;
     opacity: 1;
 }
 
@@ -351,10 +357,6 @@ textarea, select, input, button:focus {
     -ms-transform: translateX(0px);
     -webkit-transform: translateX(0px);
     transform: translateX(0px);
-}
-
-.nav-link:active {
-    border-bottom: 3px solid #5360D6;
 }
 
 .navbar.active .nav-link {
@@ -460,9 +462,12 @@ textarea, select, input, button:focus {
         display: none;
     }
 
-    html, body {
+     body {
         overflow-x: hidden;
     }
+    html{
+        overflow-x: hidden;
+            }
 }
 
 #home {
@@ -489,8 +494,12 @@ textarea, select, input, button:focus {
     color: #fff;
     font-size: 13px;
     letter-spacing: 1px;
-
+    position: relative;
     background-color: #2231F6;
+}
+
+.hero-btn:hover{
+    letter-spacing:2px !important;
 }
 
 .btn {
@@ -515,6 +524,7 @@ textarea, select, input, button:focus {
 .hero-btn:hover, hero-btn:focus {
     background-color: #fff;
     color: #2231f6;
+
 }
 
 .trial-form {
@@ -1604,7 +1614,7 @@ svg .st0 {
     width: 50px;
     height: 50px;
     text-align: center;
-    border-radius: 4px;
+    border-radius: 0px;
     position: fixed;
     bottom: 30px;
     right: 30px;
@@ -1806,7 +1816,7 @@ div.profile:hover img {
 }
 
 
-.footer .social-link a{
+.footer .social-link a , .footer1 .social-link a{
     font-size: 15px;
     color: #fff;
     margin: 0px 5px;
@@ -1821,7 +1831,7 @@ div.profile:hover img {
     -o-transition: all .6s ease;
     transition: all .6s ease;
 }
-.footer .social-link li:hover a{
+.footer .social-link li:hover a, .footer1 .social-link li:hover a{
     border-radius: 50%;
     background: #2231F6;
     -moz-transform: rotate(360deg);
@@ -1831,12 +1841,28 @@ div.profile:hover img {
     transform: rotate(360deg);
 }
 
+
+.footer1 .social-link li a i{
+    padding: 10px !important;
+}
+
+@media only screen and (max-width: 1024px) {
+    html, body{
+        overflow-x: hidden;
+    }
+}
+
+@media only screen and (width: 768px) {
+    #home{
+        margin-top: 0px !important;
+    }
+}
 @media only screen and (max-width: 768px) {
 .clients div img{
     margin-bottom: 50px;
 }
     .clients{
-        margin-top: 200px;
+        margin-top: 300px;
     }
     .section1{
         margin-bottom: 100px;
@@ -1849,5 +1875,82 @@ div.profile:hover img {
     }
     .features .mini-font {
         color:#222;
+    }
+    #home h3{
+        font-size: 18px;
+    }
+    #home{
+        position: relative;
+        margin-top: 150px;
+        margin-bottom: 100px;
+    }
+    .w-75{
+        width: 85% !important;
+    }
+}
+#loadingDiv {
+    position: fixed;
+
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color:#fff;
+    z-index: 999999;
+    overflow: hidden;
+}
+
+
+/*Loader*/
+
+.svg {
+    animation: 2s linear infinite svg-animation;
+    max-width: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+@keyframes svg-animation {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    100% {
+        transform: rotateZ(360deg)
+    }
+}
+
+
+.circle1 {
+    animation: 1.4s ease-in-out infinite both circle-animation1;
+    display: block;
+    fill: transparent;
+    stroke: #2231F6;
+    stroke-linecap: round;
+    stroke-dasharray: 283;
+    stroke-dashoffset: 280;
+    stroke-width: 10px;
+    transform-origin: 50% 50%;
+}
+
+
+@keyframes circle-animation1 {
+    0%,
+    25% {
+        stroke-dashoffset: 280;
+        transform: rotate(0);
+    }
+
+    50%,
+    75% {
+        stroke-dashoffset: 75;
+        transform: rotate(45deg);
+    }
+
+    100% {
+        stroke-dashoffset: 280;
+        transform: rotate(360deg);
     }
 }
