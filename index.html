@@ -21,65 +21,7 @@
     <!-- Animator CSS -->
     <link rel="stylesheet" href="./css/animate.css"/>
     <link rel="stylesheet" href="./css/styles.css">
-<style>
-    .mySidenav1{
-        position: absolute;
-        background-color: #fff;
-        z-index: 9999;
-        transition: .5s;
-        height: 100%;
-        top: 0;
-        right: 0;
-        width: 550px !important;
-    }
-    .sidenav {
-        height: 100%;
-        width: 0;
-        position: fixed;
-        z-index: 9999;
-        top: 0;
-        right: 0;
-        background-color: rgba(0,0,0,.8);
-        overflow-x: hidden;
-        transition: 0.5s;
-        padding-top: 60px;
-    }
 
-
-    .sidenav .closebtn {
-        position: absolute;
-        top: 0;
-        right: 25px;
-        font-size: 36px;
-        margin-left: 50px;
-    }
-
-
-    @media screen and (max-height: 450px) {
-        .sidenav {padding-top: 15px;}
-
-    }
-.side-info{
-    border-top:1px solid #C7C5C5;
-}
-.contact-list p{
-    font-size: 13px;
-    line-height: 15px;
-}
-    .instagram {
-        overflow: hidden;
-        margin: 0 -4px;
-    }
-    .instagram > a {
-        float: left;
-        width: 20.33%;
-        padding: 0 4px;
-        margin-bottom: 7px;
-    }
-    .instagram img {
-        width: 100%;
-    }
-</style>
 </head>
 <body>
 <a id="button"></a>
@@ -163,7 +105,7 @@
                 <span class="bar2"></span>
                 <span class="bar3"></span>
             </button>
-            <div id="menu-content" class="collapse navbar-collapse">
+            <div id="menu-content" class="collapse navbar-collapse menu-content">
                 <a href="toTop"></a>
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active"><a href="#home" class="nav-link">Home <span class="sr-only">(current)</span></a></li>
@@ -557,7 +499,7 @@
 
     <div class="container pt-5">
         <h2 class="heading-font text-center" data-aos="fade-up">Team Members</h2>
-        <p class="text-center mini-font w-50 m-auto pb-50" data-aos="fade-up">Lorem ipsum dolor sit amet, consectetur adipiscing elit Nulla
+        <p class="text-center mini-font m-auto pb-50" data-aos="fade-up">Lorem ipsum dolor sit amet, consectetur adipiscing elit Nulla
             accumsan, metus ultrices eleifend gravi.</p>
 
         <div class="container mt-5">
@@ -966,7 +908,7 @@
     function removeLoader() {
         $("#loadingDiv").fadeOut(500, function () {
             // fadeOut complete. Remove the loading div
-            $("#loadingDiv1").remove(); //makes page more lightweight
+            $("#loadingDiv").remove(); //makes page more lightweight
         });
     }
 </script>

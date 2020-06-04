@@ -1309,9 +1309,8 @@ Contact Section
 
 #contactForm .centered {
     bottom: -10% !important;
-    background-color: #0063dd !important;
+    /* background-color: #0063dd !important; */
 }
-
 
 .section2 {
 
@@ -1659,14 +1658,24 @@ svg .st0 {
 .st0 {
     stroke-dashoffset: 0;
     fill: #000 !important;
-    stroke-dasharray: 300 !important;
+    stroke-dasharray: 0 !important;
 }
 
 .feature-card:hover .st0 {
     fill: #2231F6 !important;
-    stroke-width: 12px;
+    stroke-width: 10px;
     animation: icon 3s linear alternate !important;
 }
+@keyframes icon {
+    10% {
+        stroke-dasharray: 300, 500, 500;
+    }
+
+    100% {
+        stroke-dasharray: 3300, 500, 300;
+    }
+}
+
 
 .feature-card:hover h4 {
     color: #fff;
@@ -1952,5 +1961,88 @@ div.profile:hover img {
     100% {
         stroke-dashoffset: 280;
         transform: rotate(360deg);
+    }
+}
+
+.mySidenav1{
+    position: absolute;
+    background-color: #fff;
+    z-index: 9999;
+    transition: .5s;
+    height: 100%;
+    top: 0;
+    right: 0;
+    width: 550px !important;
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    right: 0;
+    background-color: rgba(0,0,0,.8);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 30px;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+
+}
+.side-info{
+border-top:1px solid #C7C5C5;
+}
+.contact-list p{
+font-size: 13px;
+line-height: 15px;
+}
+.instagram {
+    overflow: hidden;
+    margin: 0 -4px;
+}
+.instagram > a {
+    float: left;
+    width: 20.33%;
+    padding: 0 4px;
+    margin-bottom: 7px;
+}
+.instagram img {
+    width: 100%;
+}
+
+@media only screen 
+  and (min-width: 768px) 
+  and (max-height: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+
+    body{
+        overflow-x: hidden !important;
+    }
+
+    .get-start-section h3{
+        font-size:1.2rem;
+    }
+
+    .get-start-section .v2 {
+        background-color: #f8f9fa !important;
+        padding: 10px 30px;
+        border-radius: 35px !important;
+        color: #0063dd;
+        letter-spacing: 0.8px;
+        font-size: 11px !important;
+        font-weight: 700;
     }
 }
